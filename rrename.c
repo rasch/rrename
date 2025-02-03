@@ -33,7 +33,7 @@ char *help[] = {
   "  naming conventions. Any character that is not a-z, 0-9,",
   "  underscore (_), slash (/), period (.) or minus (-) is replaced",
   "  or removed and filenames are converted to lowercase. Non-ASCII",
-  "  characters are not modified."
+  "  characters are not modified.",
   "",
   "", "Examples",
   "",

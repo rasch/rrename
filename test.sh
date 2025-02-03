@@ -6,7 +6,7 @@ test_renamed_dir() {
   mkdir -p "$1"
 
   ./rrename -r -i Makefile -i README
-  
+
   if ! test -d "$2"; then
     errors=$((errors + 1))
     printf 'FAILED RENAME: %s -> %s\n' "$1" "$2"
@@ -20,7 +20,7 @@ test_renamed_file() {
   touch "$1"
 
   ./rrename -r -i Makefile -i README
-  
+
   if ! test -f "$2"; then
     errors=$((errors + 1))
     printf 'FAILED RENAME: %s -> %s\n' "$1" "$2"
@@ -34,7 +34,7 @@ test_dry_run() {
   touch "$1"
 
   ./rrename -rd
-  
+
   if test -f "$2" || ! test -f "$1"; then
     errors=$((errors + 1))
     printf 'FAILED DRYRUN: %s -> %s\n' "$1" "$2"

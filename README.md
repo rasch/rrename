@@ -19,7 +19,7 @@ Use make to compile and install.
 make
 make install
 ```
-    
+
 ## Example Output
 
 ```console
